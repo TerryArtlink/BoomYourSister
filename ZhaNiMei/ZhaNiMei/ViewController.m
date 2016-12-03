@@ -1,6 +1,6 @@
 //
 //  ViewController.m
-//  炸你妹第一季
+//  ZhaNiMei
 //
 //  Created by TysonStone on 2016/12/3.
 //  Copyright © 2016年 LightingApp. All rights reserved.
@@ -17,8 +17,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    NSLog(@"ok");
-    NSLog(@"ok2");
+    NSLog(@"zhanimei");
+    UIButton *button = [[UIButton alloc]init];
+    button.frame = CGRectMake(50, 50, 50, 50);
+    button.backgroundColor = [UIColor greenColor];
+    [self.view addSubview:button];
 }
 
 
