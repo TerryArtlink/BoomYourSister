@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "XMGTabBarController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,23 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    //1.创建一个窗口
+    UIWindow *window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    
+    self.window = window;
+    
+    //2.设置窗口的跟控制器
+    XMGTabBarController *tabVC = [[XMGTabBarController alloc] init];
+    
+    window.rootViewController = tabVC;
+    
+    //3.显示窗口
+    //set tabBar as key
+    [window makeKeyAndVisible];
+
+    
+    
     return YES;
 }
 

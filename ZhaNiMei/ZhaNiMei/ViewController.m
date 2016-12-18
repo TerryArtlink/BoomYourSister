@@ -14,10 +14,6 @@
 
 @implementation ViewController
 
-
-
-
-
 //huio
 - (void)viewDidLoad {
     [super viewDidLoad];
