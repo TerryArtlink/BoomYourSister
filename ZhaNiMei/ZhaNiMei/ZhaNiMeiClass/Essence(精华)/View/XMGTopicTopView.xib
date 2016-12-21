@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="XMGTopicTopView">
+            <connections>
+                <outlet property="creatTimeLabel" destination="xLw-0H-eeB" id="NMG-E7-0g2"/>
+                <outlet property="iconView" destination="rDU-1G-wox" id="MyQ-2k-4gY"/>
+                <outlet property="nameLabel" destination="YTW-Ms-MNT" id="Kkt-Zh-piX"/>
+                <outlet property="textLabel" destination="c3V-8K-zRX" id="2RS-eq-LaH"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="h6W-Ef-ZgK" customClass="XMGTopicTopView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rDU-1G-wox" userLabel="IconView">
+                    <rect key="frame" x="10" y="10" width="35" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="35" id="OhV-W1-yt1"/>
+                        <constraint firstAttribute="height" constant="35" id="q6r-5t-ZD6"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YTW-Ms-MNT" userLabel="Name Label">
+                    <rect key="frame" x="53" y="10" width="33" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xLw-0H-eeB" userLabel="Creat Time Label">
+                    <rect key="frame" x="53" y="29" width="33" height="16"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fv7-5n-rXN">
+                    <rect key="frame" x="343" y="10" width="24" height="22"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Button" image="cellmorebtnnormal"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c3V-8K-zRX">
+                    <rect key="frame" x="10" y="53" width="366" height="20.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="366" id="a8s-cM-m5u"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="c3V-8K-zRX" firstAttribute="top" secondItem="rDU-1G-wox" secondAttribute="bottom" constant="8" id="1pf-q3-nsX"/>
+                <constraint firstItem="YTW-Ms-MNT" firstAttribute="leading" secondItem="rDU-1G-wox" secondAttribute="trailing" constant="8" symbolic="YES" id="9zE-iT-Bkk"/>
+                <constraint firstItem="rDU-1G-wox" firstAttribute="top" secondItem="YTW-Ms-MNT" secondAttribute="top" id="Pvi-aL-aaQ"/>
+                <constraint firstItem="rDU-1G-wox" firstAttribute="top" secondItem="h6W-Ef-ZgK" secondAttribute="top" constant="10" id="Zrx-i3-JA4"/>
+                <constraint firstItem="c3V-8K-zRX" firstAttribute="leading" secondItem="h6W-Ef-ZgK" secondAttribute="leading" constant="10" id="lw9-Ib-ChM"/>
+                <constraint firstItem="rDU-1G-wox" firstAttribute="leading" secondItem="h6W-Ef-ZgK" secondAttribute="leading" constant="10" id="nhB-MR-1Je"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+            <point key="canvasLocation" x="-865" y="-815"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="cellmorebtnnormal" width="24" height="20"/>
+    </resources>
+</document>

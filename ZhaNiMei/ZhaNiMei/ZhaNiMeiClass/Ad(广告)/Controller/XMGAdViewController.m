@@ -72,8 +72,11 @@
     
     [self loadData];
     
+    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(timerRunning) userInfo:nil repeats:YES];
     
-    写到这里 故意爆个错吧❎哈哈
+    self.timer = timer;
+    // 可以通过fire这个方法去触发timer，即使timer的firing time没有到达
+    [timer fire];
 }
 
 - (void)setUpLaunchImage {
@@ -143,5 +146,13 @@
         NSLog(@"%@", error);
     }];
 }
+
+- (void)AdViewBeClick {
+    if ([[UIApplication sharedApplication] canOpenURL:_adModel.ori_curl.xmg_url]) {
+        [[UIApplication sharedApplication] openURL:_adModel.ori_curl.xmg_url];
+    }
+}
+
+
 
 @end
