@@ -42,6 +42,10 @@
 		8FA877BC1DF2E91A00D0114E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FA877BA1DF2E91A00D0114E /* Main.storyboard */; };
 		8FA877BE1DF2E91A00D0114E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FA877BD1DF2E91A00D0114E /* Assets.xcassets */; };
 		8FA877C11DF2E91A00D0114E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FA877BF1DF2E91A00D0114E /* LaunchScreen.storyboard */; };
+		8FB469AA1E0BB1370064CA93 /* XMGTopicPictureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FB469A91E0BB1370064CA93 /* XMGTopicPictureView.m */; };
+		8FB469AE1E0BB26A0064CA93 /* XMGSeeBigPictureController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FB469AC1E0BB26A0064CA93 /* XMGSeeBigPictureController.m */; };
+		8FB469AF1E0BB26A0064CA93 /* XMGSeeBigPictureController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FB469AD1E0BB26A0064CA93 /* XMGSeeBigPictureController.xib */; };
+		8FB469B41E0BB3BC0064CA93 /* XMGPhotoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FB469B31E0BB3BC0064CA93 /* XMGPhotoManager.m */; };
 		8FF5562F1DF6493100F0F9C9 /* XMGEssenceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FF5562E1DF6493100F0F9C9 /* XMGEssenceController.m */; };
 		8FF556321DF64AB700F0F9C9 /* UIBarButtonItem+XMGitem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FF556311DF64AB700F0F9C9 /* UIBarButtonItem+XMGitem.m */; };
 /* End PBXBuildFile section */
@@ -112,6 +116,13 @@
 		8FA877BD1DF2E91A00D0114E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8FA877C01DF2E91A00D0114E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8FA877C21DF2E91A00D0114E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FB469A81E0BB1370064CA93 /* XMGTopicPictureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGTopicPictureView.h; sourceTree = "<group>"; };
+		8FB469A91E0BB1370064CA93 /* XMGTopicPictureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGTopicPictureView.m; sourceTree = "<group>"; };
+		8FB469AB1E0BB26A0064CA93 /* XMGSeeBigPictureController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGSeeBigPictureController.h; sourceTree = "<group>"; };
+		8FB469AC1E0BB26A0064CA93 /* XMGSeeBigPictureController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGSeeBigPictureController.m; sourceTree = "<group>"; };
+		8FB469AD1E0BB26A0064CA93 /* XMGSeeBigPictureController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XMGSeeBigPictureController.xib; sourceTree = "<group>"; };
+		8FB469B21E0BB3BC0064CA93 /* XMGPhotoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGPhotoManager.h; sourceTree = "<group>"; };
+		8FB469B31E0BB3BC0064CA93 /* XMGPhotoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGPhotoManager.m; sourceTree = "<group>"; };
 		8FF5562D1DF6493100F0F9C9 /* XMGEssenceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGEssenceController.h; sourceTree = "<group>"; };
 		8FF5562E1DF6493100F0F9C9 /* XMGEssenceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGEssenceController.m; sourceTree = "<group>"; };
 		8FF556301DF64AB700F0F9C9 /* UIBarButtonItem+XMGitem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+XMGitem.h"; sourceTree = "<group>"; };
@@ -168,6 +179,8 @@
 				8F34F2D41E077BCB003DB152 /* XMGTopicTopView.h */,
 				8F34F2D51E077BCB003DB152 /* XMGTopicTopView.m */,
 				8F34F2DA1E077CED003DB152 /* XMGTopicTopView.xib */,
+				8FB469A81E0BB1370064CA93 /* XMGTopicPictureView.h */,
+				8FB469A91E0BB1370064CA93 /* XMGTopicPictureView.m */,
 			);
 			path = CellViews;
 			sourceTree = "<group>";
@@ -249,6 +262,9 @@
 			children = (
 				8FF5562D1DF6493100F0F9C9 /* XMGEssenceController.h */,
 				8FF5562E1DF6493100F0F9C9 /* XMGEssenceController.m */,
+				8FB469AB1E0BB26A0064CA93 /* XMGSeeBigPictureController.h */,
+				8FB469AC1E0BB26A0064CA93 /* XMGSeeBigPictureController.m */,
+				8FB469AD1E0BB26A0064CA93 /* XMGSeeBigPictureController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -530,6 +546,7 @@
 		8FA877B01DF2E91900D0114E /* ZhaNiMei */ = {
 			isa = PBXGroup;
 			children = (
+				8FB469B01E0BB3A00064CA93 /* Service(业务类) */,
 				8F34F2BB1E077477003DB152 /* Base(基类) */,
 				8F811AB61DF442D3006FA521 /* ZhaNiMeiClass */,
 				8FA877B41DF2E91900D0114E /* AppDelegate.h */,
@@ -552,6 +569,23 @@
 				8FA877B21DF2E91900D0114E /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8FB469B01E0BB3A00064CA93 /* Service(业务类) */ = {
+			isa = PBXGroup;
+			children = (
+				8FB469B11E0BB3A00064CA93 /* Files */,
+			);
+			path = "Service(业务类)";
+			sourceTree = "<group>";
+		};
+		8FB469B11E0BB3A00064CA93 /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				8FB469B21E0BB3BC0064CA93 /* XMGPhotoManager.h */,
+				8FB469B31E0BB3BC0064CA93 /* XMGPhotoManager.m */,
+			);
+			path = Files;
 			sourceTree = "<group>";
 		};
 		9546F59424D906D71616F045 /* Pods */ = {
@@ -637,6 +671,7 @@
 				8F7CAEBF1DFE8D0400FFA5ED /* XMGAdViewController.xib in Resources */,
 				8FA877C11DF2E91A00D0114E /* LaunchScreen.storyboard in Resources */,
 				8FA877BE1DF2E91A00D0114E /* Assets.xcassets in Resources */,
+				8FB469AF1E0BB26A0064CA93 /* XMGSeeBigPictureController.xib in Resources */,
 				8FA877BC1DF2E91A00D0114E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -701,6 +736,7 @@
 				8F71FB631DFB8DFF00DEA848 /* XMGNavController.m in Sources */,
 				8FA877B91DF2E91A00D0114E /* ViewController.m in Sources */,
 				8F6AB2BD1DFE32F40073ECB1 /* XMGSettingController.m in Sources */,
+				8FB469B41E0BB3BC0064CA93 /* XMGPhotoManager.m in Sources */,
 				8FF556321DF64AB700F0F9C9 /* UIBarButtonItem+XMGitem.m in Sources */,
 				8F7CAEC81DFEA3B600FFA5ED /* NSString+XMGURL.m in Sources */,
 				8F6AB2CC1DFE3A7C0073ECB1 /* UITabBarItem+XMGFont.m in Sources */,
@@ -714,6 +750,7 @@
 				8F34F2D31E077A89003DB152 /* XMGTopicCell.m in Sources */,
 				8F34F2D61E077BCB003DB152 /* XMGTopicTopView.m in Sources */,
 				8F34F2E11E0782C2003DB152 /* XMGUserModel.m in Sources */,
+				8FB469AA1E0BB1370064CA93 /* XMGTopicPictureView.m in Sources */,
 				8F34F2D91E077CC3003DB152 /* XMGTopicModel.m in Sources */,
 				8FA877B61DF2E91A00D0114E /* AppDelegate.m in Sources */,
 				8F6AB2BA1DFE32A80073ECB1 /* XMGMineViewController.m in Sources */,
@@ -722,6 +759,7 @@
 				8FF5562F1DF6493100F0F9C9 /* XMGEssenceController.m in Sources */,
 				8F71FB6C1DFB90DC00DEA848 /* UIView+frame.m in Sources */,
 				8F7CAEBE1DFE8D0400FFA5ED /* XMGAdViewController.m in Sources */,
+				8FB469AE1E0BB26A0064CA93 /* XMGSeeBigPictureController.m in Sources */,
 				8F7CAEC51DFE979700FFA5ED /* AFHTTPSessionManager+XMGManager.m in Sources */,
 				8F6AB2C01DFE34580073ECB1 /* XMGFriendTrendViewController.m in Sources */,
 				8F6AB2C31DFE37B10073ECB1 /* XMGNewViewController.m in Sources */,

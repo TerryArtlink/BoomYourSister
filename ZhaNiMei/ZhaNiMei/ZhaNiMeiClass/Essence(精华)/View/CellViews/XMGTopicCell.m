@@ -9,7 +9,8 @@
 #import "XMGTopicCell.h"
 #import "XMGTopicTopView.h"
 #import "XMGTopicModel.h"
-#import "XMGTopicViewModel.h"二段秀
+#import "XMGTopicViewModel.h"
+#import "XMGTopicPictureView.h"
 
 @implementation XMGTopicCell
 
