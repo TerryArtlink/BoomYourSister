@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <MJRefresh.h>
 
-@interface XMGBaseTopicController : UIViewController
+@interface XMGBaseTopicController : UITableViewController
 
 @property(nonatomic, assign) TopicMidType type;//属性
 

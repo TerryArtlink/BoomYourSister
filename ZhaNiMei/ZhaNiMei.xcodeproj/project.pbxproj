@@ -35,6 +35,7 @@
 		8F7CAEC21DFE8D8900FFA5ED /* XMGADmodel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7CAEC11DFE8D8900FFA5ED /* XMGADmodel.m */; };
 		8F7CAEC51DFE979700FFA5ED /* AFHTTPSessionManager+XMGManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7CAEC41DFE979700FFA5ED /* AFHTTPSessionManager+XMGManager.m */; };
 		8F7CAEC81DFEA3B600FFA5ED /* NSString+XMGURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7CAEC71DFEA3B600FFA5ED /* NSString+XMGURL.m */; };
+		8F7F86E81E12316700D30247 /* XMGTopicPictureView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F7F86E71E12316700D30247 /* XMGTopicPictureView.xib */; };
 		8F811AD71DF44379006FA521 /* XMGTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F811AD61DF44379006FA521 /* XMGTabBarController.m */; };
 		8FA877B31DF2E91900D0114E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FA877B21DF2E91900D0114E /* main.m */; };
 		8FA877B61DF2E91A00D0114E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FA877B51DF2E91A00D0114E /* AppDelegate.m */; };
@@ -104,6 +105,7 @@
 		8F7CAEC41DFE979700FFA5ED /* AFHTTPSessionManager+XMGManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AFHTTPSessionManager+XMGManager.m"; sourceTree = "<group>"; };
 		8F7CAEC61DFEA3B600FFA5ED /* NSString+XMGURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+XMGURL.h"; sourceTree = "<group>"; };
 		8F7CAEC71DFEA3B600FFA5ED /* NSString+XMGURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+XMGURL.m"; sourceTree = "<group>"; };
+		8F7F86E71E12316700D30247 /* XMGTopicPictureView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XMGTopicPictureView.xib; sourceTree = "<group>"; };
 		8F811AD51DF44379006FA521 /* XMGTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGTabBarController.h; sourceTree = "<group>"; };
 		8F811AD61DF44379006FA521 /* XMGTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGTabBarController.m; sourceTree = "<group>"; };
 		8FA877AE1DF2E91900D0114E /* ZhaNiMei.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZhaNiMei.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -181,6 +183,7 @@
 				8F34F2DA1E077CED003DB152 /* XMGTopicTopView.xib */,
 				8FB469A81E0BB1370064CA93 /* XMGTopicPictureView.h */,
 				8FB469A91E0BB1370064CA93 /* XMGTopicPictureView.m */,
+				8F7F86E71E12316700D30247 /* XMGTopicPictureView.xib */,
 			);
 			path = CellViews;
 			sourceTree = "<group>";
@@ -249,8 +252,8 @@
 		8F811AB71DF442D3006FA521 /* Essence(精华) */ = {
 			isa = PBXGroup;
 			children = (
-				8F36879A1E094B95009ECBF4 /* ViewModel */,
 				8F811AB81DF442D3006FA521 /* Controller */,
+				8F36879A1E094B95009ECBF4 /* ViewModel */,
 				8F811AB91DF442D3006FA521 /* Model */,
 				8F811ABA1DF442D3006FA521 /* View */,
 			);
@@ -673,6 +676,7 @@
 				8FA877BE1DF2E91A00D0114E /* Assets.xcassets in Resources */,
 				8FB469AF1E0BB26A0064CA93 /* XMGSeeBigPictureController.xib in Resources */,
 				8FA877BC1DF2E91A00D0114E /* Main.storyboard in Resources */,
+				8F7F86E81E12316700D30247 /* XMGTopicPictureView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -22,4 +22,8 @@
 //控件的高度
 @property CGFloat xmg_h;
 
+//补充
+@property CGFloat xmg_centerX;
+@property CGFloat xmg_centerY;
+
 @end
