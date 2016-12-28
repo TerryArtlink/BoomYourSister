@@ -62,6 +62,13 @@
     //2.监听滚动
     //3.发送网络请求
     [self setUpFooterRefreshView];
+    
+    //1.加上去控件
+    //2.监听滚动
+    //3.切换状态
+    //4.发送网络请求
+    [self setUpHeaderRefreshView];
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -133,8 +140,13 @@
 -(void)setUpFooterRefreshView {
     //搞一个控件加上去
     MJRefreshAutoNormalFooter *footer = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadMoreData)];
+    self.tableView.mj_footer = footer;
+    [footer beginRefreshing];
+    footer.automaticallyHidden = YES;
 }
 
+
+#pragma mark - 加载更多数据
 -(void)loadMoreData {
     //1.创建请求管理者
     [self.mgr.tasks makeObjectsPerformSelector:@selector(cancel)];
@@ -145,7 +157,59 @@
     dic[@"c"] = @"data";
     dic[@"type"] = @(self.type);
     dic[@"maxtime"] = _maxtime;
-    //发送请求
+    //发送请求 http://api.budejie.com/api/api_open.php
+    [self.mgr xmg_GET:XMGBaseUrl parameters:dic progress:nil success:^(NSURLSessionDataTask *task, NSDictionary *responseObject) {
+        
+        [self.tableView.mj_footer endRefreshing];
+        _maxtime = responseObject[@"info"][@"maxtime"];
+        
+        //拿到字典数组
+        NSArray *dicList = responseObject[@"list"];
+        //字典转模型
+        NSMutableArray *list = [XMGTopicModel mj_objectArrayWithKeyValuesArray:dicList];
+        //数据模型转换为viewModel模型
+        for (XMGTopicModel *model in list) {
+            XMGTopicViewModel *viewModel = [[XMGTopicViewModel alloc] init];
+            viewModel.model = model;
+            [self.topicViewModels addObject:viewModel];
+        }
+        
+        [self.tableView reloadData];
+        
+    } failure:^(NSURLSessionDataTask *task, NSError *error) {
+        
+        [self.tableView.mj_footer endRefreshing];
+        xmglog(@"%@", error)
+        
+    }];
+    
+}
+
+//下拉刷新
+-(void)setUpHeaderRefreshView {
+    //搞一个控件加上去
+    MJRefreshNormalHeader *header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadData)];
+    self.tableView.mj_header = header;
+    header.automaticallyChangeAlpha = YES;
+}
+
+//==========================================
+#pragma mark - Table view data source
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return self.topicViewModels.count;
+}
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    XMGTopicCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
+    cell.viewModel = self.topicViewModels[indexPath.row];
+    return cell;
+}
+
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    //计算cell高度
+    //调用频率太高了
+    return [self.topicViewModels[indexPath.row] cellHeight]+10;
 }
 
 @end
