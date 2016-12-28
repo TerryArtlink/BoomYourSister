@@ -33,7 +33,7 @@
 
 typedef enum : NSUInteger {
     TopicMidTypePicture = 10,
-    TopicMidTypeVieo = 41,
+    TopicMidTypeVideo = 41,
     TopicMidTypeMusic = 31,
     TopicMidTypeText = 29,
     TopicMidTypeAll = 1

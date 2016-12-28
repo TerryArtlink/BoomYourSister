@@ -36,6 +36,11 @@
 		8F7CAEC51DFE979700FFA5ED /* AFHTTPSessionManager+XMGManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7CAEC41DFE979700FFA5ED /* AFHTTPSessionManager+XMGManager.m */; };
 		8F7CAEC81DFEA3B600FFA5ED /* NSString+XMGURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7CAEC71DFEA3B600FFA5ED /* NSString+XMGURL.m */; };
 		8F7F86E81E12316700D30247 /* XMGTopicPictureView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F7F86E71E12316700D30247 /* XMGTopicPictureView.xib */; };
+		8F7F86EC1E127F0D00D30247 /* XMGAllController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7F86EB1E127F0D00D30247 /* XMGAllController.m */; };
+		8F7F86EF1E127F5600D30247 /* XMGVideoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7F86EE1E127F5600D30247 /* XMGVideoController.m */; };
+		8F7F86F21E127FE100D30247 /* XMGMusicController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7F86F11E127FE100D30247 /* XMGMusicController.m */; };
+		8F7F86F51E12802600D30247 /* XMGPictureController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7F86F41E12802600D30247 /* XMGPictureController.m */; };
+		8F7F86F81E12805800D30247 /* XMGTextController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7F86F71E12805800D30247 /* XMGTextController.m */; };
 		8F811AD71DF44379006FA521 /* XMGTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F811AD61DF44379006FA521 /* XMGTabBarController.m */; };
 		8FA877B31DF2E91900D0114E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FA877B21DF2E91900D0114E /* main.m */; };
 		8FA877B61DF2E91A00D0114E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FA877B51DF2E91A00D0114E /* AppDelegate.m */; };
@@ -106,6 +111,16 @@
 		8F7CAEC61DFEA3B600FFA5ED /* NSString+XMGURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+XMGURL.h"; sourceTree = "<group>"; };
 		8F7CAEC71DFEA3B600FFA5ED /* NSString+XMGURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+XMGURL.m"; sourceTree = "<group>"; };
 		8F7F86E71E12316700D30247 /* XMGTopicPictureView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XMGTopicPictureView.xib; sourceTree = "<group>"; };
+		8F7F86EA1E127F0D00D30247 /* XMGAllController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGAllController.h; sourceTree = "<group>"; };
+		8F7F86EB1E127F0D00D30247 /* XMGAllController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGAllController.m; sourceTree = "<group>"; };
+		8F7F86ED1E127F5600D30247 /* XMGVideoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGVideoController.h; sourceTree = "<group>"; };
+		8F7F86EE1E127F5600D30247 /* XMGVideoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGVideoController.m; sourceTree = "<group>"; };
+		8F7F86F01E127FE100D30247 /* XMGMusicController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGMusicController.h; sourceTree = "<group>"; };
+		8F7F86F11E127FE100D30247 /* XMGMusicController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGMusicController.m; sourceTree = "<group>"; };
+		8F7F86F31E12802600D30247 /* XMGPictureController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGPictureController.h; sourceTree = "<group>"; };
+		8F7F86F41E12802600D30247 /* XMGPictureController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGPictureController.m; sourceTree = "<group>"; };
+		8F7F86F61E12805800D30247 /* XMGTextController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGTextController.h; sourceTree = "<group>"; };
+		8F7F86F71E12805800D30247 /* XMGTextController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGTextController.m; sourceTree = "<group>"; };
 		8F811AD51DF44379006FA521 /* XMGTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGTabBarController.h; sourceTree = "<group>"; };
 		8F811AD61DF44379006FA521 /* XMGTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGTabBarController.m; sourceTree = "<group>"; };
 		8FA877AE1DF2E91900D0114E /* ZhaNiMei.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZhaNiMei.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -233,6 +248,23 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		8F7F86E91E127EBB00D30247 /* ChildViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8F7F86EA1E127F0D00D30247 /* XMGAllController.h */,
+				8F7F86EB1E127F0D00D30247 /* XMGAllController.m */,
+				8F7F86ED1E127F5600D30247 /* XMGVideoController.h */,
+				8F7F86EE1E127F5600D30247 /* XMGVideoController.m */,
+				8F7F86F01E127FE100D30247 /* XMGMusicController.h */,
+				8F7F86F11E127FE100D30247 /* XMGMusicController.m */,
+				8F7F86F31E12802600D30247 /* XMGPictureController.h */,
+				8F7F86F41E12802600D30247 /* XMGPictureController.m */,
+				8F7F86F61E12805800D30247 /* XMGTextController.h */,
+				8F7F86F71E12805800D30247 /* XMGTextController.m */,
+			);
+			path = ChildViewControllers;
+			sourceTree = "<group>";
+		};
 		8F811AB61DF442D3006FA521 /* ZhaNiMeiClass */ = {
 			isa = PBXGroup;
 			children = (
@@ -263,6 +295,7 @@
 		8F811AB81DF442D3006FA521 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				8F7F86E91E127EBB00D30247 /* ChildViewControllers */,
 				8FF5562D1DF6493100F0F9C9 /* XMGEssenceController.h */,
 				8FF5562E1DF6493100F0F9C9 /* XMGEssenceController.m */,
 				8FB469AB1E0BB26A0064CA93 /* XMGSeeBigPictureController.h */,
@@ -288,9 +321,9 @@
 		8F811ABA1DF442D3006FA521 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8F34F2D01E077A63003DB152 /* CellViews */,
 				8F34F2D11E077A89003DB152 /* XMGTopicCell.h */,
 				8F34F2D21E077A89003DB152 /* XMGTopicCell.m */,
-				8F34F2D01E077A63003DB152 /* CellViews */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -740,7 +773,9 @@
 				8F71FB631DFB8DFF00DEA848 /* XMGNavController.m in Sources */,
 				8FA877B91DF2E91A00D0114E /* ViewController.m in Sources */,
 				8F6AB2BD1DFE32F40073ECB1 /* XMGSettingController.m in Sources */,
+				8F7F86F51E12802600D30247 /* XMGPictureController.m in Sources */,
 				8FB469B41E0BB3BC0064CA93 /* XMGPhotoManager.m in Sources */,
+				8F7F86EF1E127F5600D30247 /* XMGVideoController.m in Sources */,
 				8FF556321DF64AB700F0F9C9 /* UIBarButtonItem+XMGitem.m in Sources */,
 				8F7CAEC81DFEA3B600FFA5ED /* NSString+XMGURL.m in Sources */,
 				8F6AB2CC1DFE3A7C0073ECB1 /* UITabBarItem+XMGFont.m in Sources */,
@@ -762,12 +797,15 @@
 				8F34F2DE1E078265003DB152 /* XMGCommentModel.m in Sources */,
 				8FF5562F1DF6493100F0F9C9 /* XMGEssenceController.m in Sources */,
 				8F71FB6C1DFB90DC00DEA848 /* UIView+frame.m in Sources */,
+				8F7F86F81E12805800D30247 /* XMGTextController.m in Sources */,
 				8F7CAEBE1DFE8D0400FFA5ED /* XMGAdViewController.m in Sources */,
 				8FB469AE1E0BB26A0064CA93 /* XMGSeeBigPictureController.m in Sources */,
 				8F7CAEC51DFE979700FFA5ED /* AFHTTPSessionManager+XMGManager.m in Sources */,
 				8F6AB2C01DFE34580073ECB1 /* XMGFriendTrendViewController.m in Sources */,
 				8F6AB2C31DFE37B10073ECB1 /* XMGNewViewController.m in Sources */,
 				8F34F2E41E078985003DB152 /* NSDate+XMGDealTime.m in Sources */,
+				8F7F86F21E127FE100D30247 /* XMGMusicController.m in Sources */,
+				8F7F86EC1E127F0D00D30247 /* XMGAllController.m in Sources */,
 				8FA877B31DF2E91900D0114E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
