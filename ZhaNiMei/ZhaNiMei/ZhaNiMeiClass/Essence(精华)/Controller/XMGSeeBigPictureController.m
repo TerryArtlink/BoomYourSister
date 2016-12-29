@@ -10,7 +10,9 @@
 #import "XMGTopicModel.h"
 #import <SDImageCache.h>
 #import <UIImageView+WebCache.h>
+
 #import <SVProgressHUD.h>
+
 #import <Photos/Photos.h>
 #import "XMGPhotoManager.h"
 
@@ -93,7 +95,7 @@
     
     if (stutas == PHAuthorizationStatusAuthorized) { //允许
         //保存相片到相册
-        [XMGPhotoManager savePhoto:_imageV toCollection:collectionTitle completionHandler:^(BOOL success, NSError *error) {
+        [XMGPhotoManager savePhoto:_imageV.image toCollection:collectionTitle completionHandler:^(BOOL success, NSError *error) {
             if (success) {
                 [SVProgressHUD showSuccessWithStatus:@"图片保存成功"];
             }else {
@@ -105,7 +107,7 @@
         [PHPhotoLibrary requestAuthorization:^(PHAuthorizationStatus status) {
             if (status == PHAuthorizationStatusAuthorized) {
                 //保存相片到相册
-                [XMGPhotoManager savePhoto:_imageV toCollection:collectionTitle completionHandler:^(BOOL success, NSError *error) {
+                [XMGPhotoManager savePhoto:_imageV.image toCollection:collectionTitle completionHandler:^(BOOL success, NSError *error) {
                     if (success) {
                         [SVProgressHUD showSuccessWithStatus:@"图片保存成功"];
                     }else {
@@ -116,8 +118,9 @@
         }];
         
     }else { //拒绝
+        //url    UIApplicationOpenSettingsURLString.xmg_url
         if ([[UIApplication sharedApplication] canOpenURL:UIApplicationOpenSettingsURLString.xmg_url]) {
-            [[UIApplication sharedApplication] openURL:UIApplicationOpenSettingsURLString.xmg_url];
+            [[UIApplication sharedApplication] openURL:UIApplicationOpenSettingsURLString.xmg_url options:@{} completionHandler:nil];
         }
     }
 }

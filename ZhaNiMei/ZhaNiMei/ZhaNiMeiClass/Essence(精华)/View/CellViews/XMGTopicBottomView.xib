@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="XMGTopicBottomView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QNf-Ma-lE6" userLabel="Ding Btn">
+                    <rect key="frame" x="0.0" y="0.0" width="94" height="50"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="顶" image="mainCellDing">
+                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DgA-HQ-lnw" userLabel="Cai Btn">
+                    <rect key="frame" x="94" y="0.0" width="93.5" height="50"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="踩" image="mainCellCai">
+                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eBZ-ix-YFc" userLabel="Share Btn">
+                    <rect key="frame" x="187.5" y="0.0" width="94" height="50"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="转发" image="mainCellShare">
+                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dds-VZ-bSe" userLabel="Comment Btn">
+                    <rect key="frame" x="281.5" y="0.0" width="93.5" height="50"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <state key="normal" title="评论" image="mainCellComment">
+                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cell-content-line" translatesAutoresizingMaskIntoConstraints="NO" id="7I1-8x-BHg">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="2"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="2" id="Szq-xh-gMo"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Dds-VZ-bSe" firstAttribute="leading" secondItem="eBZ-ix-YFc" secondAttribute="trailing" id="1r4-RV-aic"/>
+                <constraint firstItem="eBZ-ix-YFc" firstAttribute="width" secondItem="QNf-Ma-lE6" secondAttribute="width" id="3vx-Gg-0vo"/>
+                <constraint firstItem="eBZ-ix-YFc" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="5Qi-3D-3Zf"/>
+                <constraint firstItem="eBZ-ix-YFc" firstAttribute="leading" secondItem="DgA-HQ-lnw" secondAttribute="trailing" id="6ea-sQ-ont"/>
+                <constraint firstItem="DgA-HQ-lnw" firstAttribute="height" secondItem="QNf-Ma-lE6" secondAttribute="height" id="8IR-Ak-lL2"/>
+                <constraint firstItem="QNf-Ma-lE6" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="9UV-Gw-KhF"/>
+                <constraint firstAttribute="bottom" secondItem="Dds-VZ-bSe" secondAttribute="bottom" id="Bfu-Fa-ivr"/>
+                <constraint firstAttribute="bottom" secondItem="eBZ-ix-YFc" secondAttribute="bottom" id="Chu-mh-Vtr"/>
+                <constraint firstAttribute="bottom" secondItem="DgA-HQ-lnw" secondAttribute="bottom" id="EQv-y9-KlN"/>
+                <constraint firstItem="Dds-VZ-bSe" firstAttribute="height" secondItem="QNf-Ma-lE6" secondAttribute="height" id="FKM-ue-duK"/>
+                <constraint firstItem="QNf-Ma-lE6" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="FYg-Az-2X1"/>
+                <constraint firstItem="7I1-8x-BHg" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Fn9-pR-hHo"/>
+                <constraint firstItem="DgA-HQ-lnw" firstAttribute="height" secondItem="QNf-Ma-lE6" secondAttribute="height" id="IDJ-ZE-HqY"/>
+                <constraint firstItem="eBZ-ix-YFc" firstAttribute="width" secondItem="QNf-Ma-lE6" secondAttribute="width" id="M5A-tI-uX9"/>
+                <constraint firstAttribute="bottom" secondItem="DgA-HQ-lnw" secondAttribute="bottom" id="NUY-TM-cLE"/>
+                <constraint firstItem="eBZ-ix-YFc" firstAttribute="height" secondItem="QNf-Ma-lE6" secondAttribute="height" id="Se2-Mv-O5R"/>
+                <constraint firstItem="7I1-8x-BHg" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="T7t-JT-Whd"/>
+                <constraint firstItem="eBZ-ix-YFc" firstAttribute="height" secondItem="QNf-Ma-lE6" secondAttribute="height" id="TSk-7e-dqA"/>
+                <constraint firstItem="DgA-HQ-lnw" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="VZh-nV-eIv"/>
+                <constraint firstItem="Dds-VZ-bSe" firstAttribute="width" secondItem="QNf-Ma-lE6" secondAttribute="width" id="Y4g-Aw-rf2"/>
+                <constraint firstItem="Dds-VZ-bSe" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ZgX-sf-9Yn"/>
+                <constraint firstItem="Dds-VZ-bSe" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Zzr-Iw-FYw"/>
+                <constraint firstAttribute="trailing" secondItem="7I1-8x-BHg" secondAttribute="trailing" id="a2t-xf-3LA"/>
+                <constraint firstItem="DgA-HQ-lnw" firstAttribute="width" secondItem="QNf-Ma-lE6" secondAttribute="width" id="acz-Aq-1Ad"/>
+                <constraint firstItem="DgA-HQ-lnw" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="bia-ly-WDM"/>
+                <constraint firstAttribute="bottom" secondItem="QNf-Ma-lE6" secondAttribute="bottom" id="dT7-fZ-ABs"/>
+                <constraint firstItem="DgA-HQ-lnw" firstAttribute="width" secondItem="QNf-Ma-lE6" secondAttribute="width" id="gIb-Du-OuS"/>
+                <constraint firstAttribute="bottom" secondItem="Dds-VZ-bSe" secondAttribute="bottom" id="o4W-Bl-MLI"/>
+                <constraint firstAttribute="trailing" secondItem="Dds-VZ-bSe" secondAttribute="trailing" id="o9c-Od-gKS"/>
+                <constraint firstItem="Dds-VZ-bSe" firstAttribute="width" secondItem="QNf-Ma-lE6" secondAttribute="width" id="oCg-G5-ITb"/>
+                <constraint firstAttribute="bottom" secondItem="QNf-Ma-lE6" secondAttribute="bottom" id="oJy-wq-5p8"/>
+                <constraint firstItem="DgA-HQ-lnw" firstAttribute="leading" secondItem="QNf-Ma-lE6" secondAttribute="trailing" id="qEP-2D-JhE"/>
+                <constraint firstItem="eBZ-ix-YFc" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="qI6-fT-7QQ"/>
+                <constraint firstItem="QNf-Ma-lE6" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ry5-YF-xna"/>
+                <constraint firstItem="Dds-VZ-bSe" firstAttribute="height" secondItem="QNf-Ma-lE6" secondAttribute="height" id="tvq-Kk-jwj"/>
+                <constraint firstAttribute="bottom" secondItem="eBZ-ix-YFc" secondAttribute="bottom" id="uXl-JA-uKF"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="caiBtn" destination="DgA-HQ-lnw" id="l79-wL-3nc"/>
+                <outlet property="commentBtn" destination="Dds-VZ-bSe" id="XPO-ka-TVw"/>
+                <outlet property="dingBtn" destination="QNf-Ma-lE6" id="kae-60-0l6"/>
+                <outlet property="shareBtn" destination="eBZ-ix-YFc" id="Lks-Ca-0be"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="cell-content-line" width="299" height="1"/>
+        <image name="mainCellCai" width="20" height="20"/>
+        <image name="mainCellComment" width="20" height="20"/>
+        <image name="mainCellDing" width="20" height="20"/>
+        <image name="mainCellShare" width="20" height="20"/>
+    </resources>
+</document>

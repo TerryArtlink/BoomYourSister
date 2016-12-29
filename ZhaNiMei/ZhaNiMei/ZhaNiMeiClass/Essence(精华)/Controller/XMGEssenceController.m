@@ -8,20 +8,75 @@
 
 #import "XMGEssenceController.h"
 
+#import "XMGAllController.h"
+#import "XMGVideoController.h"
+#import "XMGMusicController.h"
+#import "XMGPictureController.h"
+#import "XMGTextController.h"
+
 @interface XMGEssenceController ()
 
 @end
 
 @implementation XMGEssenceController
 
+//1.cell不等高
+//2.cell类型多
+//3.结构类似,-->中间部分
+//4.分割层次-->1.topView 2.midView 3.commentView 4.toolView
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
     [self setUpNav];
-    NSLog(@"你乃别");
     
 }
+
+-(void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+}
+
+
+#pragma mark - 添加子控制器
+-(void)addAllChildVC{
+    //1.添加子控制器
+    
+    //1.全部
+    XMGAllController* allVC = [[XMGAllController alloc] init];
+    allVC.title =@"全部";
+    
+    [self addChildViewController:allVC];
+    //2.视频
+    XMGVideoController* videoVC = [[XMGVideoController alloc] init];
+    videoVC.view.backgroundColor = [UIColor redColor];
+    videoVC.title =@"视频";
+    
+    [self addChildViewController:videoVC];
+    
+    //3.声音
+    XMGMusicController * musicVC = [[XMGMusicController alloc] init];
+    musicVC.title =@"声音";
+    
+    [self addChildViewController:musicVC];
+    
+    //4.图片
+    XMGPictureController* picVC = [[XMGPictureController alloc] init];
+    picVC.title =@"图片";
+    
+    [self addChildViewController:picVC];
+    
+    
+    //段子
+    XMGTextController* textVC = [[XMGTextController alloc] init];
+    textVC.title =@"段子";
+    
+    [self addChildViewController:textVC];
+    
+}
+
+
 
 - (void)setUpNav {
     

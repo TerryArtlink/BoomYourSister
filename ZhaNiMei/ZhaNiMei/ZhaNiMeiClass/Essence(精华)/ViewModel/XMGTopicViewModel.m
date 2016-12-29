@@ -23,6 +23,8 @@
     CGFloat textW = XMGScreenW - 2 * margin;
     CGFloat textH = [model.text sizeWithFont:[UIFont systemFontOfSize:15] constrainedToSize:CGSizeMake(textW, CGFLOAT_MAX)].height;
     
+    
+    
     CGFloat topViewX = 0;
     CGFloat topViewY = 0;
     CGFloat topViewW = XMGScreenW;

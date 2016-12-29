@@ -14,7 +14,7 @@
 //标题栏
 @property (nonatomic, weak) UIScrollView *titleView;
 @property (nonatomic, weak) UIButton *selectedBtn;
-@property (nonatomic, weak) UICollectionView *collectView;
+@property (nonatomic, weak) UICollectionView *collectionView;
 
 //
 @property(nonatomic, strong)NSMutableArray *btns;
@@ -68,11 +68,45 @@ static NSString *const ID = @"cell";
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(refreshView) name:@"TabBarItemClick" object:nil];
     
     self.titleView.scrollsToTop = NO;
-    self.collectView.scrollsToTop = NO;
+    self.collectionView.scrollsToTop = NO;
 }
 
 -(void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
+}
+
+#pragma mark - collectionView 代理方法
+-(void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
+    //让对应的按钮点击
+    NSInteger idex = scrollView.contentOffset.x/XMGScreenW;
+    //拿到第count个按钮
+    UIButton *btn = self.btns[idex]; //self.titleView.subViews[count];
+    //对应的按钮选中
+    [self titleBtnClick:btn];
+}
+
+#pragma mark - collection 数据源方法
+-(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+    return self.childViewControllers.count;
+}
+
+-(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:ID forIndexPath:indexPath];
+    
+    //拿到子控制器
+    UITableViewController *vc = self.childViewControllers[indexPath.item];
+    UITableView *vcView = (UITableView *)vc.view;
+    vcView.frame = [UIScreen mainScreen].bounds;
+    vcView.contentInset = UIEdgeInsetsMake(64+35, 0, 49, 0);
+    [cell.contentView.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
+    [cell.contentView addSubview:vc.view];
+    
+    NSInteger colrn = arc4random_uniform(256);
+    NSInteger colrm = arc4random_uniform(256);
+    NSInteger colrv = arc4random_uniform(256);
+    
+    cell.backgroundColor = [UIColor colorWithRed:colrm/255.0 green:colrn/255.0 blue:colrv/255.0 alpha:1.0];
+    return cell;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -102,7 +136,7 @@ static NSString *const ID = @"cell";
     
     //2.创建collectionView
     UICollectionView *collectionView = [[UICollectionView alloc] initWithFrame:[UIScreen mainScreen].bounds collectionViewLayout:layout];
-    self.collectView = collectionView;
+    self.collectionView = collectionView;
     collectionView.backgroundColor = [UIColor grayColor];
     collectionView.pagingEnabled = YES;
     collectionView.bounces = NO;
@@ -165,6 +199,26 @@ static NSString *const ID = @"cell";
     }
 }
 
+#pragma mark - 标题按钮被点击
+-(void)titleBtnClick:(UIButton *)btn {
+    if (_selectedBtn == btn) {
+        ///发生了多次点击
+        //刷新界面
+        XMGBaseTopicController *vc = self.childViewControllers[btn.tag];
+        
+        [vc.tableView.mj_header beginRefreshing];
+    }
+    
+    [self btnSelected:btn];
+    //点击按钮的时候1.你要把对应的子控制器的view加上cell上 2.让我们的collectionView滚动到对应的位置
+    self.collectionView.contentOffset = CGPointMake(XMGScreenW * btn.tag, 0);
+    
+    [UIView animateWithDuration:0.25 animations:^{
+        _line.xmg_centerX = btn.xmg_centerX;
+    }];
+    
+}
+
 #pragma mark - 按钮被选中
 -(void)btnSelected:(UIButton *)btn {
     _selectedBtn.selected = NO;
@@ -179,6 +233,8 @@ static NSString *const ID = @"cell";
         [vc.tableView.mj_header beginRefreshing];
     }
 }
+
+
 
 @end
 

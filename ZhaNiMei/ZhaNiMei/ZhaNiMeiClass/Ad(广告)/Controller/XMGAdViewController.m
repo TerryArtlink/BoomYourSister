@@ -149,7 +149,7 @@
 
 - (void)AdViewBeClick {
     if ([[UIApplication sharedApplication] canOpenURL:_adModel.ori_curl.xmg_url]) {
-        [[UIApplication sharedApplication] openURL:_adModel.ori_curl.xmg_url];
+        [[UIApplication sharedApplication] openURL:_adModel.ori_curl.xmg_url options:@{} completionHandler:nil];
     }
 }
 

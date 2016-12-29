@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "XMGBaseController.h"
 
 @interface XMGEssenceController : UIViewController
 

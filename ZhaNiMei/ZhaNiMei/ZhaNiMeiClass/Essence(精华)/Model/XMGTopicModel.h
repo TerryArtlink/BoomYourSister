@@ -47,10 +47,10 @@
 @property(nonatomic, assign) BOOL is_bigPic;
 
 
-#pragma mark vieo属性
+#pragma mark video属性
 //videoUri videoTime playCount
 @property(nonatomic, strong)NSString *videouri;
-@property(nonatomic, assign)NSInteger *videotime;//属性
+@property(nonatomic, assign)NSInteger videotime;//属性
 @property(nonatomic, strong)NSString *playcount;
 
 #pragma mark voice 属性

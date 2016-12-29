@@ -20,6 +20,9 @@
 
 @property (nonatomic, weak) UIButton *publishBtn;
 
+//
+@property(nonatomic, strong)UITabBarItem *selectedItem;
+
 @end
 
 @implementation XMGTabBarController

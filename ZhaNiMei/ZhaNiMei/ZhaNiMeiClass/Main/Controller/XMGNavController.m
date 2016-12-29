@@ -9,6 +9,7 @@
 
 #import "XMGNavController.h"
 #import "XMGNavBar.h"
+#import "XMGBackView.h"
 
 @interface XMGNavController ()
 
@@ -36,21 +37,34 @@
     XMGNavBar *bar = [[XMGNavBar alloc] init];
     
     [self setValue:bar forKey:@"navigationBar"];
+    
+    //我们手势被触发的时候执行,target的action方法
+    id target = self.interactivePopGestureRecognizer.delegate;
+    UIPanGestureRecognizer *fullScreenGes = [[UIPanGestureRecognizer alloc] initWithTarget:target action:@selector(handleNavigationTransition:)];
+    
+    [self.view addGestureRecognizer:fullScreenGes];
+    
+    fullScreenGes.delegate = self;
+    self.interactivePopGestureRecognizer.enabled = NO;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated {
+    //等于0的时候,是正在push根控制器
+    if (self.childViewControllers.count > 0) { //非根控制器
+        viewController.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:[XMGBackView backViewWithImageName:@"navigationButtonReturn" HighlightName:@"navigationButtonReturnClick" target:self action:@selector(back)]];
+        viewController.hidesBottomBarWhenPushed = YES;
+    }
+    [super pushViewController:viewController animated:animated];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+-(void)back {
+    [self popViewControllerAnimated:YES];
 }
-*/
+
+#pragma mark UIGestureRecognizerDelegate
+-(BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(nonnull UITouch *)touch {
+    //判断是否是根控制器
+    return self.childViewControllers.count > 1;
+}
 
 @end
