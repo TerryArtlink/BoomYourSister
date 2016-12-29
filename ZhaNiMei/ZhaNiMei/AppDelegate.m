@@ -7,13 +7,25 @@
 //
 
 #import "AppDelegate.h"
+#import "XMGAdViewController.h"
 #import "XMGTabBarController.h"
 
 @interface AppDelegate ()
-
+//醉了
+@property(nonatomic, strong)UIWindow *window1;
 @end
 
+//点击状态栏不能滚动到顶部
+//原因屏幕里有多个ScrollView
+//让你滚动?--在哪里调用方法
+//做什么事情滚动
+
 @implementation AppDelegate
+//1.在代理里面添加广告界面-->添加到什么地方(根控制器)-->window
+//2.启动完成的时候添加广告界面--
+//3.我们先把广告控制器设置为我window的根控制器
+
+//启动界面,截屏的(静态的),不可行
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
@@ -25,15 +37,16 @@
     self.window = window;
     
     //2.设置窗口的跟控制器
-    XMGTabBarController *tabVC = [[XMGTabBarController alloc] init];
-    
-    window.rootViewController = tabVC;
+#warning 打包上架的时候换过来
+    XMGTabBarController *rootVC = [[XMGTabBarController alloc] init];
+#warning 新帖结束改过来
+    window.rootViewController = rootVC;
     
     //3.显示窗口
     //set tabBar as key
     [window makeKeyAndVisible];
 
-    
+    [UIApplication sharedApplication].statusBarHidden = NO;
     
     return YES;
 }

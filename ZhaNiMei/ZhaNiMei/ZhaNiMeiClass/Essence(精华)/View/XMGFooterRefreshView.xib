@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="XMGFooterRefreshView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="35"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="上拉加载更多" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Om-ZH-HfQ" userLabel="Pull Label">
+                    <rect key="frame" x="135.5" y="7" width="104" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="cjf-uf-KfW"/>
+                        <constraint firstAttribute="width" constant="104" id="e6W-Jk-I4m"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="haY-xF-jri" userLabel="Loding View">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="35"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="正在加载更多数据..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BrW-Me-wbW">
+                            <rect key="frame" x="110.5" y="7" width="153" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="q6v-M5-Fge">
+                            <rect key="frame" x="90.5" y="7" width="20" height="20"/>
+                        </activityIndicatorView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="BrW-Me-wbW" firstAttribute="centerX" secondItem="haY-xF-jri" secondAttribute="centerX" id="Bzy-H7-Dnx"/>
+                        <constraint firstItem="BrW-Me-wbW" firstAttribute="centerY" secondItem="haY-xF-jri" secondAttribute="centerY" id="fvG-Jj-t40"/>
+                        <constraint firstItem="q6v-M5-Fge" firstAttribute="centerY" secondItem="haY-xF-jri" secondAttribute="centerY" id="sDS-2E-Os9"/>
+                        <constraint firstItem="BrW-Me-wbW" firstAttribute="leading" secondItem="q6v-M5-Fge" secondAttribute="trailing" id="yz9-WS-oD4"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="haY-xF-jri" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="19O-69-KRo"/>
+                <constraint firstItem="8Om-ZH-HfQ" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="7cf-1R-Jsa"/>
+                <constraint firstAttribute="trailing" secondItem="haY-xF-jri" secondAttribute="trailing" id="Q1b-Rp-kci"/>
+                <constraint firstItem="8Om-ZH-HfQ" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="RYZ-sl-eSp"/>
+                <constraint firstItem="haY-xF-jri" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Spu-w5-Zvh"/>
+                <constraint firstAttribute="bottom" secondItem="haY-xF-jri" secondAttribute="bottom" id="jGp-MV-lx3"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="lodingView" destination="haY-xF-jri" id="zr1-ut-dSs"/>
+                <outlet property="pullLabel" destination="8Om-ZH-HfQ" id="YqR-KE-Fxz"/>
+            </connections>
+        </view>
+    </objects>
+</document>

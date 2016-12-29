@@ -137,7 +137,7 @@
         
         [adImageView sd_setImageWithURL:adModel.w_picurl.xmg_url];
         
-        //给图片增加一个手势
+        //给图片增加一个点按手势
         UITapGestureRecognizer *tapGes = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(AdViewBeClick)];
         [adImageView addGestureRecognizer:tapGes];
         

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="XMGHeaderRefreshView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow" translatesAutoresizingMaskIntoConstraints="NO" id="cZw-Ic-kYJ">
+                    <rect key="frame" x="30" y="10" width="15" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="15" id="H3V-Mi-Ux3"/>
+                        <constraint firstAttribute="height" constant="20" id="sBW-kh-PWK"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="下拉加载更多" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Why-m5-OWh" userLabel="Drag View">
+                    <rect key="frame" x="136" y="10" width="104" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jwd-zU-jN4" userLabel="Is Loading View">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+                    <subviews>
+                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="kiU-J2-GOH">
+                            <rect key="frame" x="59.5" y="10" width="20" height="20"/>
+                        </activityIndicatorView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="正在加载更多数据..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JOJ-0f-cVb">
+                            <rect key="frame" x="119.5" y="10.5" width="135.5" height="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="JOJ-0f-cVb" firstAttribute="centerX" secondItem="jwd-zU-jN4" secondAttribute="centerX" id="Ao6-Xt-NyI"/>
+                        <constraint firstItem="kiU-J2-GOH" firstAttribute="centerY" secondItem="jwd-zU-jN4" secondAttribute="centerY" id="FAE-bZ-Oe8"/>
+                        <constraint firstItem="JOJ-0f-cVb" firstAttribute="centerY" secondItem="jwd-zU-jN4" secondAttribute="centerY" id="eKV-OL-EHb"/>
+                        <constraint firstItem="kiU-J2-GOH" firstAttribute="trailing" secondItem="JOJ-0f-cVb" secondAttribute="leading" constant="-40" id="loY-Pj-lsy"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="cZw-Ic-kYJ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="0bO-Ut-UDb"/>
+                <constraint firstItem="cZw-Ic-kYJ" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Ad9-ov-FSx"/>
+                <constraint firstItem="Why-m5-OWh" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="EMZ-B8-ezf"/>
+                <constraint firstAttribute="bottom" secondItem="jwd-zU-jN4" secondAttribute="bottom" id="Uez-Wz-22h"/>
+                <constraint firstItem="jwd-zU-jN4" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="XFI-i9-I57"/>
+                <constraint firstItem="jwd-zU-jN4" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="kjB-uT-0cH"/>
+                <constraint firstItem="Why-m5-OWh" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="n5o-zN-nh7"/>
+                <constraint firstAttribute="trailing" secondItem="jwd-zU-jN4" secondAttribute="trailing" id="yJk-nX-v0W"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="arrow" destination="cZw-Ic-kYJ" id="tIz-EL-5WX"/>
+                <outlet property="dragView" destination="Why-m5-OWh" id="IEt-EN-Cwt"/>
+                <outlet property="isLoadingView" destination="jwd-zU-jN4" id="F6a-0i-tgg"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="arrow" width="64" height="64"/>
+    </resources>
+</document>

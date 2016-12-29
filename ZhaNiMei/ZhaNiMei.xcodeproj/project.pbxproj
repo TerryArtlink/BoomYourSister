@@ -18,6 +18,10 @@
 		8F34F2DE1E078265003DB152 /* XMGCommentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F34F2DD1E078265003DB152 /* XMGCommentModel.m */; };
 		8F34F2E11E0782C2003DB152 /* XMGUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F34F2E01E0782C2003DB152 /* XMGUserModel.m */; };
 		8F34F2E41E078985003DB152 /* NSDate+XMGDealTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F34F2E31E078985003DB152 /* NSDate+XMGDealTime.m */; };
+		8F5836D31E152752001A0703 /* XMGFooterRefreshView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F5836D21E152752001A0703 /* XMGFooterRefreshView.m */; };
+		8F5836D51E1527CC001A0703 /* XMGFooterRefreshView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F5836D41E1527CC001A0703 /* XMGFooterRefreshView.xib */; };
+		8F5836D81E152A24001A0703 /* XMGHeaderRefreshView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F5836D71E152A24001A0703 /* XMGHeaderRefreshView.m */; };
+		8F5836DA1E152A90001A0703 /* XMGHeaderRefreshView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F5836D91E152A90001A0703 /* XMGHeaderRefreshView.xib */; };
 		8F6AB2BA1DFE32A80073ECB1 /* XMGMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F6AB2B91DFE32A80073ECB1 /* XMGMineViewController.m */; };
 		8F6AB2BD1DFE32F40073ECB1 /* XMGSettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F6AB2BC1DFE32F40073ECB1 /* XMGSettingController.m */; };
 		8F6AB2C01DFE34580073ECB1 /* XMGFriendTrendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F6AB2BF1DFE34580073ECB1 /* XMGFriendTrendViewController.m */; };
@@ -44,7 +48,6 @@
 		8F811AD71DF44379006FA521 /* XMGTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F811AD61DF44379006FA521 /* XMGTabBarController.m */; };
 		8FA877B31DF2E91900D0114E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FA877B21DF2E91900D0114E /* main.m */; };
 		8FA877B61DF2E91A00D0114E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FA877B51DF2E91A00D0114E /* AppDelegate.m */; };
-		8FA877B91DF2E91A00D0114E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FA877B81DF2E91A00D0114E /* ViewController.m */; };
 		8FA877BC1DF2E91A00D0114E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FA877BA1DF2E91A00D0114E /* Main.storyboard */; };
 		8FA877BE1DF2E91A00D0114E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FA877BD1DF2E91A00D0114E /* Assets.xcassets */; };
 		8FA877C11DF2E91A00D0114E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FA877BF1DF2E91A00D0114E /* LaunchScreen.storyboard */; };
@@ -85,6 +88,12 @@
 		8F34F2E01E0782C2003DB152 /* XMGUserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGUserModel.m; sourceTree = "<group>"; };
 		8F34F2E21E078985003DB152 /* NSDate+XMGDealTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+XMGDealTime.h"; sourceTree = "<group>"; };
 		8F34F2E31E078985003DB152 /* NSDate+XMGDealTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+XMGDealTime.m"; sourceTree = "<group>"; };
+		8F5836D11E152752001A0703 /* XMGFooterRefreshView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XMGFooterRefreshView.h; path = CellViews/XMGFooterRefreshView.h; sourceTree = "<group>"; };
+		8F5836D21E152752001A0703 /* XMGFooterRefreshView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XMGFooterRefreshView.m; path = CellViews/XMGFooterRefreshView.m; sourceTree = "<group>"; };
+		8F5836D41E1527CC001A0703 /* XMGFooterRefreshView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XMGFooterRefreshView.xib; sourceTree = "<group>"; };
+		8F5836D61E152A24001A0703 /* XMGHeaderRefreshView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGHeaderRefreshView.h; sourceTree = "<group>"; };
+		8F5836D71E152A24001A0703 /* XMGHeaderRefreshView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGHeaderRefreshView.m; sourceTree = "<group>"; };
+		8F5836D91E152A90001A0703 /* XMGHeaderRefreshView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XMGHeaderRefreshView.xib; sourceTree = "<group>"; };
 		8F6AB2B81DFE32A80073ECB1 /* XMGMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGMineViewController.h; sourceTree = "<group>"; };
 		8F6AB2B91DFE32A80073ECB1 /* XMGMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGMineViewController.m; sourceTree = "<group>"; };
 		8F6AB2BB1DFE32F40073ECB1 /* XMGSettingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGSettingController.h; sourceTree = "<group>"; };
@@ -135,8 +144,6 @@
 		8FA877B21DF2E91900D0114E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8FA877B41DF2E91900D0114E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8FA877B51DF2E91A00D0114E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		8FA877B71DF2E91A00D0114E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		8FA877B81DF2E91A00D0114E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		8FA877BB1DF2E91A00D0114E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8FA877BD1DF2E91A00D0114E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8FA877C01DF2E91A00D0114E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -356,6 +363,12 @@
 				8F34F2D01E077A63003DB152 /* CellViews */,
 				8F34F2D11E077A89003DB152 /* XMGTopicCell.h */,
 				8F34F2D21E077A89003DB152 /* XMGTopicCell.m */,
+				8F5836D11E152752001A0703 /* XMGFooterRefreshView.h */,
+				8F5836D21E152752001A0703 /* XMGFooterRefreshView.m */,
+				8F5836D41E1527CC001A0703 /* XMGFooterRefreshView.xib */,
+				8F5836D61E152A24001A0703 /* XMGHeaderRefreshView.h */,
+				8F5836D71E152A24001A0703 /* XMGHeaderRefreshView.m */,
+				8F5836D91E152A90001A0703 /* XMGHeaderRefreshView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -620,8 +633,6 @@
 				8FA877B41DF2E91900D0114E /* AppDelegate.h */,
 				8FA877B51DF2E91A00D0114E /* AppDelegate.m */,
 				8FF556331DF6509000F0F9C9 /* ZhaNiMei.pch */,
-				8FA877B71DF2E91A00D0114E /* ViewController.h */,
-				8FA877B81DF2E91A00D0114E /* ViewController.m */,
 				8FA877BA1DF2E91A00D0114E /* Main.storyboard */,
 				8FA877BD1DF2E91A00D0114E /* Assets.xcassets */,
 				8FA877BF1DF2E91A00D0114E /* LaunchScreen.storyboard */,
@@ -740,11 +751,13 @@
 				8F34F2DB1E077CED003DB152 /* XMGTopicTopView.xib in Resources */,
 				8F7CAEBF1DFE8D0400FFA5ED /* XMGAdViewController.xib in Resources */,
 				8FA877C11DF2E91A00D0114E /* LaunchScreen.storyboard in Resources */,
+				8F5836DA1E152A90001A0703 /* XMGHeaderRefreshView.xib in Resources */,
 				8FD27B121E14F5E8008637D6 /* XMGTopicVideoView.xib in Resources */,
 				8FD27B1C1E150045008637D6 /* XMGTopicCommentView.xib in Resources */,
 				8FA877BE1DF2E91A00D0114E /* Assets.xcassets in Resources */,
 				8FB469AF1E0BB26A0064CA93 /* XMGSeeBigPictureController.xib in Resources */,
 				8FA877BC1DF2E91A00D0114E /* Main.storyboard in Resources */,
+				8F5836D51E1527CC001A0703 /* XMGFooterRefreshView.xib in Resources */,
 				8F7F86E81E12316700D30247 /* XMGTopicPictureView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -808,7 +821,6 @@
 				8F811AD71DF44379006FA521 /* XMGTabBarController.m in Sources */,
 				8F71FB631DFB8DFF00DEA848 /* XMGNavController.m in Sources */,
 				8FD27B101E14F53A008637D6 /* XMGTopicVideoView.m in Sources */,
-				8FA877B91DF2E91A00D0114E /* ViewController.m in Sources */,
 				8F6AB2BD1DFE32F40073ECB1 /* XMGSettingController.m in Sources */,
 				8F7F86F51E12802600D30247 /* XMGPictureController.m in Sources */,
 				8FB469B41E0BB3BC0064CA93 /* XMGPhotoManager.m in Sources */,
@@ -837,12 +849,14 @@
 				8FF5562F1DF6493100F0F9C9 /* XMGEssenceController.m in Sources */,
 				8F71FB6C1DFB90DC00DEA848 /* UIView+frame.m in Sources */,
 				8F7F86F81E12805800D30247 /* XMGTextController.m in Sources */,
+				8F5836D81E152A24001A0703 /* XMGHeaderRefreshView.m in Sources */,
 				8F7CAEBE1DFE8D0400FFA5ED /* XMGAdViewController.m in Sources */,
 				8FB469AE1E0BB26A0064CA93 /* XMGSeeBigPictureController.m in Sources */,
 				8F7CAEC51DFE979700FFA5ED /* AFHTTPSessionManager+XMGManager.m in Sources */,
 				8F6AB2C01DFE34580073ECB1 /* XMGFriendTrendViewController.m in Sources */,
 				8FD27B1F1E150A0B008637D6 /* XMGTopicBottomView.m in Sources */,
 				8F6AB2C31DFE37B10073ECB1 /* XMGNewViewController.m in Sources */,
+				8F5836D31E152752001A0703 /* XMGFooterRefreshView.m in Sources */,
 				8F34F2E41E078985003DB152 /* NSDate+XMGDealTime.m in Sources */,
 				8F7F86F21E127FE100D30247 /* XMGMusicController.m in Sources */,
 				8F7F86EC1E127F0D00D30247 /* XMGAllController.m in Sources */,
