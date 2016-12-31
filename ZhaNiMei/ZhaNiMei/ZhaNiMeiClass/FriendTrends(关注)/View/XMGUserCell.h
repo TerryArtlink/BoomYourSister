@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+@class XMGTrendUserModel;
+
+
 @interface XMGUserCell : UITableViewCell
+
+@property(nonatomic, strong) XMGTrendUserModel *model;
 
 @end
