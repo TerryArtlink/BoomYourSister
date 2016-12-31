@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		7D4E2292127A0997C88C0591 /* libPods-ZhaNiMei.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8149A30764660CA230A741A2 /* libPods-ZhaNiMei.a */; };
+		8F2CFC321E17C53E00D938BE /* XMGTrendUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F2CFC311E17C53E00D938BE /* XMGTrendUserModel.m */; };
+		8F2CFC341E17C5E100D938BE /* XMGCategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F2CFC331E17C5E100D938BE /* XMGCategoryCell.xib */; };
+		8F2CFC371E17C7CF00D938BE /* XMGUserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F2CFC361E17C7CF00D938BE /* XMGUserCell.m */; };
 		8F34F2C01E077497003DB152 /* XMGBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F34F2BF1E077497003DB152 /* XMGBaseView.m */; };
 		8F34F2C61E07762F003DB152 /* XMGBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F34F2C51E07762F003DB152 /* XMGBaseController.m */; };
 		8F34F2C91E07768D003DB152 /* XMGBaseTopicController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F34F2C81E07768D003DB152 /* XMGBaseTopicController.m */; };
@@ -22,6 +25,11 @@
 		8F5836D51E1527CC001A0703 /* XMGFooterRefreshView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F5836D41E1527CC001A0703 /* XMGFooterRefreshView.xib */; };
 		8F5836D81E152A24001A0703 /* XMGHeaderRefreshView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F5836D71E152A24001A0703 /* XMGHeaderRefreshView.m */; };
 		8F5836DA1E152A90001A0703 /* XMGHeaderRefreshView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F5836D91E152A90001A0703 /* XMGHeaderRefreshView.xib */; };
+		8F5836E01E153117001A0703 /* XMGLoginRegistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F5836DE1E153117001A0703 /* XMGLoginRegistViewController.m */; };
+		8F5836E41E153155001A0703 /* XMGLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F5836E31E153155001A0703 /* XMGLoginView.m */; };
+		8F5836E61E1531B1001A0703 /* XMGLoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F5836E51E1531B1001A0703 /* XMGLoginView.xib */; };
+		8F5836E81E15380C001A0703 /* XMGLoginRegistViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F5836E71E15380C001A0703 /* XMGLoginRegistViewController.storyboard */; };
+		8F5836EE1E15388C001A0703 /* XMGFastLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F5836ED1E15388C001A0703 /* XMGFastLoginController.m */; };
 		8F6AB2BA1DFE32A80073ECB1 /* XMGMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F6AB2B91DFE32A80073ECB1 /* XMGMineViewController.m */; };
 		8F6AB2BD1DFE32F40073ECB1 /* XMGSettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F6AB2BC1DFE32F40073ECB1 /* XMGSettingController.m */; };
 		8F6AB2C01DFE34580073ECB1 /* XMGFriendTrendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F6AB2BF1DFE34580073ECB1 /* XMGFriendTrendViewController.m */; };
@@ -39,6 +47,7 @@
 		8F7CAEC21DFE8D8900FFA5ED /* XMGADmodel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7CAEC11DFE8D8900FFA5ED /* XMGADmodel.m */; };
 		8F7CAEC51DFE979700FFA5ED /* AFHTTPSessionManager+XMGManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7CAEC41DFE979700FFA5ED /* AFHTTPSessionManager+XMGManager.m */; };
 		8F7CAEC81DFEA3B600FFA5ED /* NSString+XMGURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7CAEC71DFEA3B600FFA5ED /* NSString+XMGURL.m */; };
+		8F7CD7E41E173A3D00426BBD /* XMGCategoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7CD7E31E173A3D00426BBD /* XMGCategoryModel.m */; };
 		8F7F86E81E12316700D30247 /* XMGTopicPictureView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F7F86E71E12316700D30247 /* XMGTopicPictureView.xib */; };
 		8F7F86EC1E127F0D00D30247 /* XMGAllController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7F86EB1E127F0D00D30247 /* XMGAllController.m */; };
 		8F7F86EF1E127F5600D30247 /* XMGVideoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7F86EE1E127F5600D30247 /* XMGVideoController.m */; };
@@ -48,7 +57,6 @@
 		8F811AD71DF44379006FA521 /* XMGTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F811AD61DF44379006FA521 /* XMGTabBarController.m */; };
 		8FA877B31DF2E91900D0114E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FA877B21DF2E91900D0114E /* main.m */; };
 		8FA877B61DF2E91A00D0114E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FA877B51DF2E91A00D0114E /* AppDelegate.m */; };
-		8FA877BC1DF2E91A00D0114E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FA877BA1DF2E91A00D0114E /* Main.storyboard */; };
 		8FA877BE1DF2E91A00D0114E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FA877BD1DF2E91A00D0114E /* Assets.xcassets */; };
 		8FA877C11DF2E91A00D0114E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FA877BF1DF2E91A00D0114E /* LaunchScreen.storyboard */; };
 		8FB469AA1E0BB1370064CA93 /* XMGTopicPictureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FB469A91E0BB1370064CA93 /* XMGTopicPictureView.m */; };
@@ -65,10 +73,19 @@
 		8FD27B211E150A3F008637D6 /* XMGTopicBottomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FD27B201E150A3F008637D6 /* XMGTopicBottomView.xib */; };
 		8FF5562F1DF6493100F0F9C9 /* XMGEssenceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FF5562E1DF6493100F0F9C9 /* XMGEssenceController.m */; };
 		8FF556321DF64AB700F0F9C9 /* UIBarButtonItem+XMGitem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FF556311DF64AB700F0F9C9 /* UIBarButtonItem+XMGitem.m */; };
+		8FF5745F1E16909F00FE1A38 /* XMGTrendComController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FF5745D1E16909F00FE1A38 /* XMGTrendComController.m */; };
+		8FF574601E16909F00FE1A38 /* XMGTrendComController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FF5745E1E16909F00FE1A38 /* XMGTrendComController.xib */; };
+		8FF574641E16910900FE1A38 /* XMGCategoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FF574621E16910900FE1A38 /* XMGCategoryCell.m */; };
+		8FF574651E16910900FE1A38 /* XMGUserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FF574631E16910900FE1A38 /* XMGUserCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8149A30764660CA230A741A2 /* libPods-ZhaNiMei.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZhaNiMei.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F2CFC301E17C53E00D938BE /* XMGTrendUserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGTrendUserModel.h; sourceTree = "<group>"; };
+		8F2CFC311E17C53E00D938BE /* XMGTrendUserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGTrendUserModel.m; sourceTree = "<group>"; };
+		8F2CFC331E17C5E100D938BE /* XMGCategoryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XMGCategoryCell.xib; sourceTree = "<group>"; };
+		8F2CFC351E17C7CF00D938BE /* XMGUserCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGUserCell.h; sourceTree = "<group>"; };
+		8F2CFC361E17C7CF00D938BE /* XMGUserCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGUserCell.m; sourceTree = "<group>"; };
 		8F34F2BE1E077497003DB152 /* XMGBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGBaseView.h; sourceTree = "<group>"; };
 		8F34F2BF1E077497003DB152 /* XMGBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGBaseView.m; sourceTree = "<group>"; };
 		8F34F2C41E07762F003DB152 /* XMGBaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGBaseController.h; sourceTree = "<group>"; };
@@ -94,6 +111,14 @@
 		8F5836D61E152A24001A0703 /* XMGHeaderRefreshView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGHeaderRefreshView.h; sourceTree = "<group>"; };
 		8F5836D71E152A24001A0703 /* XMGHeaderRefreshView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGHeaderRefreshView.m; sourceTree = "<group>"; };
 		8F5836D91E152A90001A0703 /* XMGHeaderRefreshView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XMGHeaderRefreshView.xib; sourceTree = "<group>"; };
+		8F5836DD1E153117001A0703 /* XMGLoginRegistViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGLoginRegistViewController.h; sourceTree = "<group>"; };
+		8F5836DE1E153117001A0703 /* XMGLoginRegistViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGLoginRegistViewController.m; sourceTree = "<group>"; };
+		8F5836E21E153155001A0703 /* XMGLoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGLoginView.h; sourceTree = "<group>"; };
+		8F5836E31E153155001A0703 /* XMGLoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGLoginView.m; sourceTree = "<group>"; };
+		8F5836E51E1531B1001A0703 /* XMGLoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XMGLoginView.xib; sourceTree = "<group>"; };
+		8F5836E71E15380C001A0703 /* XMGLoginRegistViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = XMGLoginRegistViewController.storyboard; sourceTree = "<group>"; };
+		8F5836EC1E15388C001A0703 /* XMGFastLoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGFastLoginController.h; sourceTree = "<group>"; };
+		8F5836ED1E15388C001A0703 /* XMGFastLoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGFastLoginController.m; sourceTree = "<group>"; };
 		8F6AB2B81DFE32A80073ECB1 /* XMGMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGMineViewController.h; sourceTree = "<group>"; };
 		8F6AB2B91DFE32A80073ECB1 /* XMGMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGMineViewController.m; sourceTree = "<group>"; };
 		8F6AB2BB1DFE32F40073ECB1 /* XMGSettingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGSettingController.h; sourceTree = "<group>"; };
@@ -127,6 +152,8 @@
 		8F7CAEC41DFE979700FFA5ED /* AFHTTPSessionManager+XMGManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AFHTTPSessionManager+XMGManager.m"; sourceTree = "<group>"; };
 		8F7CAEC61DFEA3B600FFA5ED /* NSString+XMGURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+XMGURL.h"; sourceTree = "<group>"; };
 		8F7CAEC71DFEA3B600FFA5ED /* NSString+XMGURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+XMGURL.m"; sourceTree = "<group>"; };
+		8F7CD7E21E173A3D00426BBD /* XMGCategoryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGCategoryModel.h; sourceTree = "<group>"; };
+		8F7CD7E31E173A3D00426BBD /* XMGCategoryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGCategoryModel.m; sourceTree = "<group>"; };
 		8F7F86E71E12316700D30247 /* XMGTopicPictureView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XMGTopicPictureView.xib; sourceTree = "<group>"; };
 		8F7F86EA1E127F0D00D30247 /* XMGAllController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGAllController.h; sourceTree = "<group>"; };
 		8F7F86EB1E127F0D00D30247 /* XMGAllController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGAllController.m; sourceTree = "<group>"; };
@@ -144,7 +171,6 @@
 		8FA877B21DF2E91900D0114E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8FA877B41DF2E91900D0114E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8FA877B51DF2E91A00D0114E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		8FA877BB1DF2E91A00D0114E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8FA877BD1DF2E91A00D0114E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8FA877C01DF2E91A00D0114E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8FA877C21DF2E91A00D0114E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -172,6 +198,12 @@
 		8FF556301DF64AB700F0F9C9 /* UIBarButtonItem+XMGitem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+XMGitem.h"; sourceTree = "<group>"; };
 		8FF556311DF64AB700F0F9C9 /* UIBarButtonItem+XMGitem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+XMGitem.m"; sourceTree = "<group>"; };
 		8FF556331DF6509000F0F9C9 /* ZhaNiMei.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZhaNiMei.pch; sourceTree = "<group>"; };
+		8FF5745C1E16909F00FE1A38 /* XMGTrendComController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGTrendComController.h; sourceTree = "<group>"; };
+		8FF5745D1E16909F00FE1A38 /* XMGTrendComController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGTrendComController.m; sourceTree = "<group>"; };
+		8FF5745E1E16909F00FE1A38 /* XMGTrendComController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XMGTrendComController.xib; sourceTree = "<group>"; };
+		8FF574611E16910900FE1A38 /* XMGCategoryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGCategoryCell.h; sourceTree = "<group>"; };
+		8FF574621E16910900FE1A38 /* XMGCategoryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGCategoryCell.m; sourceTree = "<group>"; };
+		8FF574631E16910900FE1A38 /* XMGUserCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XMGUserCell.xib; sourceTree = "<group>"; };
 		D9C0DB20EA06C75C1CF526FF /* Pods-ZhaNiMei.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZhaNiMei.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZhaNiMei/Pods-ZhaNiMei.release.xcconfig"; sourceTree = "<group>"; };
 		F3BA26D573CE6C18AC83F680 /* Pods-ZhaNiMei.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZhaNiMei.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZhaNiMei/Pods-ZhaNiMei.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -388,6 +420,14 @@
 			children = (
 				8F6AB2BE1DFE34580073ECB1 /* XMGFriendTrendViewController.h */,
 				8F6AB2BF1DFE34580073ECB1 /* XMGFriendTrendViewController.m */,
+				8F5836DD1E153117001A0703 /* XMGLoginRegistViewController.h */,
+				8F5836DE1E153117001A0703 /* XMGLoginRegistViewController.m */,
+				8F5836E71E15380C001A0703 /* XMGLoginRegistViewController.storyboard */,
+				8F5836EC1E15388C001A0703 /* XMGFastLoginController.h */,
+				8F5836ED1E15388C001A0703 /* XMGFastLoginController.m */,
+				8FF5745C1E16909F00FE1A38 /* XMGTrendComController.h */,
+				8FF5745D1E16909F00FE1A38 /* XMGTrendComController.m */,
+				8FF5745E1E16909F00FE1A38 /* XMGTrendComController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -395,6 +435,10 @@
 		8F811ABD1DF442D3006FA521 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8F7CD7E21E173A3D00426BBD /* XMGCategoryModel.h */,
+				8F7CD7E31E173A3D00426BBD /* XMGCategoryModel.m */,
+				8F2CFC301E17C53E00D938BE /* XMGTrendUserModel.h */,
+				8F2CFC311E17C53E00D938BE /* XMGTrendUserModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -402,6 +446,15 @@
 		8F811ABE1DF442D3006FA521 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8F5836E21E153155001A0703 /* XMGLoginView.h */,
+				8F5836E31E153155001A0703 /* XMGLoginView.m */,
+				8F5836E51E1531B1001A0703 /* XMGLoginView.xib */,
+				8FF574611E16910900FE1A38 /* XMGCategoryCell.h */,
+				8FF574621E16910900FE1A38 /* XMGCategoryCell.m */,
+				8F2CFC331E17C5E100D938BE /* XMGCategoryCell.xib */,
+				8F2CFC351E17C7CF00D938BE /* XMGUserCell.h */,
+				8F2CFC361E17C7CF00D938BE /* XMGUserCell.m */,
+				8FF574631E16910900FE1A38 /* XMGUserCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -633,7 +686,6 @@
 				8FA877B41DF2E91900D0114E /* AppDelegate.h */,
 				8FA877B51DF2E91A00D0114E /* AppDelegate.m */,
 				8FF556331DF6509000F0F9C9 /* ZhaNiMei.pch */,
-				8FA877BA1DF2E91A00D0114E /* Main.storyboard */,
 				8FA877BD1DF2E91A00D0114E /* Assets.xcassets */,
 				8FA877BF1DF2E91A00D0114E /* LaunchScreen.storyboard */,
 				8FA877C21DF2E91A00D0114E /* Info.plist */,
@@ -748,16 +800,20 @@
 			files = (
 				8FD27B211E150A3F008637D6 /* XMGTopicBottomView.xib in Resources */,
 				8FD27B171E14FD7B008637D6 /* XMGTopicVoiceView.xib in Resources */,
+				8FF574601E16909F00FE1A38 /* XMGTrendComController.xib in Resources */,
 				8F34F2DB1E077CED003DB152 /* XMGTopicTopView.xib in Resources */,
 				8F7CAEBF1DFE8D0400FFA5ED /* XMGAdViewController.xib in Resources */,
 				8FA877C11DF2E91A00D0114E /* LaunchScreen.storyboard in Resources */,
 				8F5836DA1E152A90001A0703 /* XMGHeaderRefreshView.xib in Resources */,
 				8FD27B121E14F5E8008637D6 /* XMGTopicVideoView.xib in Resources */,
+				8F2CFC341E17C5E100D938BE /* XMGCategoryCell.xib in Resources */,
 				8FD27B1C1E150045008637D6 /* XMGTopicCommentView.xib in Resources */,
 				8FA877BE1DF2E91A00D0114E /* Assets.xcassets in Resources */,
 				8FB469AF1E0BB26A0064CA93 /* XMGSeeBigPictureController.xib in Resources */,
-				8FA877BC1DF2E91A00D0114E /* Main.storyboard in Resources */,
+				8F5836E81E15380C001A0703 /* XMGLoginRegistViewController.storyboard in Resources */,
+				8F5836E61E1531B1001A0703 /* XMGLoginView.xib in Resources */,
 				8F5836D51E1527CC001A0703 /* XMGFooterRefreshView.xib in Resources */,
+				8FF574651E16910900FE1A38 /* XMGUserCell.xib in Resources */,
 				8F7F86E81E12316700D30247 /* XMGTopicPictureView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -826,9 +882,13 @@
 				8FB469B41E0BB3BC0064CA93 /* XMGPhotoManager.m in Sources */,
 				8F7F86EF1E127F5600D30247 /* XMGVideoController.m in Sources */,
 				8FF556321DF64AB700F0F9C9 /* UIBarButtonItem+XMGitem.m in Sources */,
+				8F2CFC321E17C53E00D938BE /* XMGTrendUserModel.m in Sources */,
 				8F7CAEC81DFEA3B600FFA5ED /* NSString+XMGURL.m in Sources */,
 				8F6AB2CC1DFE3A7C0073ECB1 /* UITabBarItem+XMGFont.m in Sources */,
 				8F71FB691DFB8E7200DEA848 /* XMGBackView.m in Sources */,
+				8FF574641E16910900FE1A38 /* XMGCategoryCell.m in Sources */,
+				8F5836EE1E15388C001A0703 /* XMGFastLoginController.m in Sources */,
+				8F2CFC371E17C7CF00D938BE /* XMGUserCell.m in Sources */,
 				8F7CAEC21DFE8D8900FFA5ED /* XMGADmodel.m in Sources */,
 				8F6AB2C91DFE393F0073ECB1 /* UIImage+XMGRender.m in Sources */,
 				8F34F2C01E077497003DB152 /* XMGBaseView.m in Sources */,
@@ -841,11 +901,13 @@
 				8FB469AA1E0BB1370064CA93 /* XMGTopicPictureView.m in Sources */,
 				8F34F2D91E077CC3003DB152 /* XMGTopicModel.m in Sources */,
 				8FA877B61DF2E91A00D0114E /* AppDelegate.m in Sources */,
+				8F7CD7E41E173A3D00426BBD /* XMGCategoryModel.m in Sources */,
 				8F6AB2BA1DFE32A80073ECB1 /* XMGMineViewController.m in Sources */,
 				8F6AB2C61DFE38F40073ECB1 /* XMGPublishViewController.m in Sources */,
 				8FD27B1A1E150001008637D6 /* XMGTopicCommentView.m in Sources */,
 				8FD27B151E14FD20008637D6 /* XMGTopicVoiceView.m in Sources */,
 				8F34F2DE1E078265003DB152 /* XMGCommentModel.m in Sources */,
+				8F5836E01E153117001A0703 /* XMGLoginRegistViewController.m in Sources */,
 				8FF5562F1DF6493100F0F9C9 /* XMGEssenceController.m in Sources */,
 				8F71FB6C1DFB90DC00DEA848 /* UIView+frame.m in Sources */,
 				8F7F86F81E12805800D30247 /* XMGTextController.m in Sources */,
@@ -853,6 +915,7 @@
 				8F7CAEBE1DFE8D0400FFA5ED /* XMGAdViewController.m in Sources */,
 				8FB469AE1E0BB26A0064CA93 /* XMGSeeBigPictureController.m in Sources */,
 				8F7CAEC51DFE979700FFA5ED /* AFHTTPSessionManager+XMGManager.m in Sources */,
+				8F5836E41E153155001A0703 /* XMGLoginView.m in Sources */,
 				8F6AB2C01DFE34580073ECB1 /* XMGFriendTrendViewController.m in Sources */,
 				8FD27B1F1E150A0B008637D6 /* XMGTopicBottomView.m in Sources */,
 				8F6AB2C31DFE37B10073ECB1 /* XMGNewViewController.m in Sources */,
@@ -860,6 +923,7 @@
 				8F34F2E41E078985003DB152 /* NSDate+XMGDealTime.m in Sources */,
 				8F7F86F21E127FE100D30247 /* XMGMusicController.m in Sources */,
 				8F7F86EC1E127F0D00D30247 /* XMGAllController.m in Sources */,
+				8FF5745F1E16909F00FE1A38 /* XMGTrendComController.m in Sources */,
 				8FA877B31DF2E91900D0114E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -867,14 +931,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		8FA877BA1DF2E91A00D0114E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8FA877BB1DF2E91A00D0114E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8FA877BF1DF2E91A00D0114E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

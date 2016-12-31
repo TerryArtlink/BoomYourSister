@@ -1,39 +1,22 @@
-
-
-
 //
-//  XMGFriendTrendViewController.m
+//  XMGFastLoginController.m
 //  ZhaNiMei
 //
-//  Created by TysonStone on 2016/12/12.
+//  Created by TysonStone on 2016/12/29.
 //  Copyright © 2016年 LightingApp. All rights reserved.
 //
 
-#import "XMGFriendTrendViewController.h"
-#import "XMGLoginRegistViewController.h"
+#import "XMGFastLoginController.h"
 
-@interface XMGFriendTrendViewController ()
+@interface XMGFastLoginController ()
 
 @end
 
-@implementation XMGFriendTrendViewController
+@implementation XMGFastLoginController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
-    [self setUpNav];
-}
-
-- (void)setUpNav {
-    self.navigationItem.title = @"我的关注";
-    
-    //左侧按钮
-    self.navigationItem.leftBarButtonItem = [UIBarButtonItem barButtonitemWithImageName:@"friendsRecommentIcon" HighlightName:@"friendsRecommentIcon-click" target:self action:@selector(addFriend)];
-}
-
-- (void)addFriend {
-
 }
 
 - (void)didReceiveMemoryWarning {
